@@ -13,7 +13,6 @@ class CategoryViewController: UIViewController, UITableViewDelegate, UITableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("I am here")
 
         // Do any additional setup after loading the view.
     }

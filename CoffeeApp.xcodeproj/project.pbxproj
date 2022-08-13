@@ -11,6 +11,7 @@
 		0B1E1DCE28A7AB6F001ACB32 /* ProfileStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B1E1DCD28A7AB6F001ACB32 /* ProfileStoryboard.storyboard */; };
 		0B1E1DD028A7C027001ACB32 /* ProductItemStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B1E1DCF28A7C027001ACB32 /* ProductItemStoryboard.storyboard */; };
 		0B1E1DD228A7C073001ACB32 /* ProductItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1E1DD128A7C073001ACB32 /* ProductItemViewController.swift */; };
+		0B22455628A8474B00BFE1C2 /* CoffeeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B22455528A8474B00BFE1C2 /* CoffeeTableViewCell.swift */; };
 		0B481FD028A696A2005F434C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B481FCF28A696A2005F434C /* AppDelegate.swift */; };
 		0B481FD228A696A2005F434C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B481FD128A696A2005F434C /* SceneDelegate.swift */; };
 		0B481FD728A696A2005F434C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B481FD528A696A2005F434C /* Main.storyboard */; };
@@ -22,7 +23,6 @@
 		0B481FEB28A6AC58005F434C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B481FEA28A6AC58005F434C /* ProfileViewController.swift */; };
 		0BECD0DE28A80BB200B26C23 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BECD0DD28A80BB200B26C23 /* CategoryViewController.swift */; };
 		0BECD0E028A80BC200B26C23 /* CategoryStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BECD0DF28A80BC200B26C23 /* CategoryStoryboard.storyboard */; };
-		965FF4E528A8384800EC9231 /* CoffeeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965FF4E428A8384800EC9231 /* CoffeeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +30,7 @@
 		0B1E1DCD28A7AB6F001ACB32 /* ProfileStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileStoryboard.storyboard; sourceTree = "<group>"; };
 		0B1E1DCF28A7C027001ACB32 /* ProductItemStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProductItemStoryboard.storyboard; sourceTree = "<group>"; };
 		0B1E1DD128A7C073001ACB32 /* ProductItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItemViewController.swift; sourceTree = "<group>"; };
+		0B22455528A8474B00BFE1C2 /* CoffeeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		0B481FCC28A696A2005F434C /* CoffeeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B481FCF28A696A2005F434C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B481FD128A696A2005F434C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,7 +44,6 @@
 		0B481FEA28A6AC58005F434C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		0BECD0DD28A80BB200B26C23 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		0BECD0DF28A80BC200B26C23 /* CategoryStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CategoryStoryboard.storyboard; sourceTree = "<group>"; };
-		965FF4E428A8384800EC9231 /* CoffeeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +116,7 @@
 		0BECD0DA28A808B600B26C23 /* Data Models */ = {
 			isa = PBXGroup;
 			children = (
-				965FF4E428A8384800EC9231 /* CoffeeTableViewCell.swift */,
+				0B22455528A8474B00BFE1C2 /* CoffeeTableViewCell.swift */,
 			);
 			name = "Data Models";
 			path = "../../Data Models";
@@ -197,7 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				965FF4E528A8384800EC9231 /* CoffeeTableViewCell.swift in Sources */,
+				0B22455628A8474B00BFE1C2 /* CoffeeTableViewCell.swift in Sources */,
 				0B481FEB28A6AC58005F434C /* ProfileViewController.swift in Sources */,
 				0B481FD028A696A2005F434C /* AppDelegate.swift in Sources */,
 				0B481FD228A696A2005F434C /* SceneDelegate.swift in Sources */,
