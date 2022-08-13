@@ -15,6 +15,7 @@ class LogInViewController: UIViewController {
         super.viewDidLoad()
         logInOutlet.clipsToBounds=true
         logInOutlet.layer.cornerRadius=logInOutlet.frame.height/2
+        print("testing")
         // Do any additional setup after loading the view.
     }
     //These are used to get user data
