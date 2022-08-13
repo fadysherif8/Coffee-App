@@ -185,7 +185,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content=".">
                                             <attributes>
-                                                <font key="NSFont" metaFont="toolTip"/>
+                                                <font key="NSFont" usesAppearanceFont="YES"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -205,7 +205,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content=".">
                                             <attributes>
-                                                <font key="NSFont" metaFont="toolTip"/>
+                                                <font key="NSFont" usesAppearanceFont="YES"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -225,7 +225,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content=".">
                                             <attributes>
-                                                <font key="NSFont" metaFont="toolTip"/>
+                                                <font key="NSFont" usesAppearanceFont="YES"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -245,7 +245,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content=".">
                                             <attributes>
-                                                <font key="NSFont" metaFont="toolTip"/>
+                                                <font key="NSFont" usesAppearanceFont="YES"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -265,7 +265,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content=".">
                                             <attributes>
-                                                <font key="NSFont" metaFont="toolTip"/>
+                                                <font key="NSFont" usesAppearanceFont="YES"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -285,7 +285,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content=".">
                                             <attributes>
-                                                <font key="NSFont" metaFont="toolTip"/>
+                                                <font key="NSFont" usesAppearanceFont="YES"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
