@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B1E1DCC28A7AB1E001ACB32 /* LogInStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B1E1DCB28A7AB1E001ACB32 /* LogInStoryboard.storyboard */; };
+		0B1E1DCE28A7AB6F001ACB32 /* ProfileStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B1E1DCD28A7AB6F001ACB32 /* ProfileStoryboard.storyboard */; };
 		0B481FD028A696A2005F434C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B481FCF28A696A2005F434C /* AppDelegate.swift */; };
 		0B481FD228A696A2005F434C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B481FD128A696A2005F434C /* SceneDelegate.swift */; };
 		0B481FD728A696A2005F434C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B481FD528A696A2005F434C /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B1E1DCB28A7AB1E001ACB32 /* LogInStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LogInStoryboard.storyboard; sourceTree = "<group>"; };
+		0B1E1DCD28A7AB6F001ACB32 /* ProfileStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileStoryboard.storyboard; sourceTree = "<group>"; };
 		0B481FCC28A696A2005F434C /* CoffeeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B481FCF28A696A2005F434C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B481FD128A696A2005F434C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,12 +47,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0B481FC328A696A2005F434C = {
+		0B1E1DC928A7A9F2001ACB32 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				0B481FEA28A6AC58005F434C /* ProfileViewController.swift */,
 				0B481FE628A69738005F434C /* RegisterViewController.swift */,
 				0B481FE828A69756005F434C /* LogInViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0B1E1DCA28A7AAD4001ACB32 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				0B481FD528A696A2005F434C /* Main.storyboard */,
+				0B1E1DCB28A7AB1E001ACB32 /* LogInStoryboard.storyboard */,
+				0B1E1DCD28A7AB6F001ACB32 /* ProfileStoryboard.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		0B481FC328A696A2005F434C = {
+			isa = PBXGroup;
+			children = (
 				0B481FCE28A696A2005F434C /* CoffeeApp */,
 				0B481FCD28A696A2005F434C /* Products */,
 			);
@@ -65,9 +86,10 @@
 		0B481FCE28A696A2005F434C /* CoffeeApp */ = {
 			isa = PBXGroup;
 			children = (
+				0B1E1DCA28A7AAD4001ACB32 /* Storyboards */,
+				0B1E1DC928A7A9F2001ACB32 /* Controllers */,
 				0B481FCF28A696A2005F434C /* AppDelegate.swift */,
 				0B481FD128A696A2005F434C /* SceneDelegate.swift */,
-				0B481FD528A696A2005F434C /* Main.storyboard */,
 				0B481FDB28A696A3005F434C /* Assets.xcassets */,
 				0B481FDD28A696A3005F434C /* LaunchScreen.storyboard */,
 				0B481FE028A696A3005F434C /* Info.plist */,
@@ -137,6 +159,8 @@
 				0B481FDF28A696A3005F434C /* LaunchScreen.storyboard in Resources */,
 				0B481FDC28A696A3005F434C /* Assets.xcassets in Resources */,
 				0B481FD728A696A2005F434C /* Main.storyboard in Resources */,
+				0B1E1DCC28A7AB1E001ACB32 /* LogInStoryboard.storyboard in Resources */,
+				0B1E1DCE28A7AB6F001ACB32 /* ProfileStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,7 +327,8 @@
 				INFOPLIST_FILE = CoffeeApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LogInStoryboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
@@ -331,7 +356,8 @@
 				INFOPLIST_FILE = CoffeeApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LogInStoryboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
