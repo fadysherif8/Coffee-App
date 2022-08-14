@@ -11,12 +11,16 @@ import CoreData
 class LogInViewController: UIViewController {
     //This is just for styling purposes
     @IBOutlet weak var logInOutlet: UIButton!
+    //this button takes you to the create signUp Screen
+    @IBAction func registerButton(_ sender: Any) {
+        performSegue(withIdentifier: "toSignUp", sender: self)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         logInOutlet.clipsToBounds=true
         logInOutlet.layer.cornerRadius=logInOutlet.frame.height/2
-        // Do any additional setup after loading the view.
+
     }
     //These are used to get user data
     @IBOutlet weak var logEmailField: UITextField!
