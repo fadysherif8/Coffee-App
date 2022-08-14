@@ -9,11 +9,59 @@ import UIKit
 
 class ProductItemViewController: UIViewController {
     
+    @IBOutlet weak var button1: UIButton!
+    @IBOutlet weak var button3: UIButton!
+    @IBOutlet weak var button2: UIButton!
     @IBOutlet weak var addCartOutlet: UIButton!
     @IBOutlet weak var priceField: UILabel!
     @IBOutlet weak var minusOutlet: UIButton!
     @IBOutlet weak var plusOutlet: UIButton!
+    @IBOutlet weak var sugarSmall: UIImageView!
+    @IBOutlet weak var sugarMedium1: UIImageView!
+    @IBOutlet weak var sugarMedium2: UIImageView!
+    @IBOutlet weak var sugarLarge1: UIImageView!
+    @IBOutlet weak var sugarLarge2: UIImageView!
+    @IBOutlet weak var sugarLarge3: UIImageView!
     
+    @IBAction func largeSize(_ sender: UIButton) {
+        sender.setBackgroundImage(UIImage(named: "macciato"), for: .normal)
+        button1.setBackgroundImage(UIImage(named: "not selected"), for: .normal)
+        button2.setBackgroundImage(UIImage(named: "not selected"), for: .normal)
+    }
+    @IBAction func mediumSize(_ sender: UIButton) {
+        sender.setBackgroundImage(UIImage(named: "macciato"), for: .normal)
+        button1.setBackgroundImage(UIImage(named: "not selected"), for: .normal)
+        button3.setBackgroundImage(UIImage(named: "not selected"), for: .normal)
+    }
+    @IBAction func smallSize(_ sender: UIButton) {
+        sender.setBackgroundImage(UIImage(named: "macciato"), for: .normal)
+        button2.setBackgroundImage(UIImage(named: "not selected"), for: .normal)
+        button3.setBackgroundImage(UIImage(named: "not selected"), for: .normal)
+    }
+    @IBAction func sugar1(_ sender: Any) {
+        sugarSmall.image=UIImage(systemName: "cube.fill")
+        sugarMedium1.image=UIImage(systemName: "cube")
+        sugarMedium2.image=UIImage(systemName: "cube")
+        sugarLarge1.image=UIImage(systemName: "cube")
+        sugarLarge2.image=UIImage(systemName: "cube")
+        sugarLarge3.image=UIImage(systemName: "cube")
+    }
+    @IBAction func sugar2(_ sender: Any) {
+        sugarSmall.image=UIImage(systemName: "cube")
+        sugarMedium1.image=UIImage(systemName: "cube.fill")
+        sugarMedium2.image=UIImage(systemName: "cube.fill")
+        sugarLarge1.image=UIImage(systemName: "cube")
+        sugarLarge2.image=UIImage(systemName: "cube")
+        sugarLarge3.image=UIImage(systemName: "cube")
+    }
+    @IBAction func sugar3(_ sender: Any) {
+        sugarSmall.image=UIImage(systemName: "cube")
+        sugarMedium1.image=UIImage(systemName: "cube")
+        sugarMedium2.image=UIImage(systemName: "cube")
+        sugarLarge1.image=UIImage(systemName: "cube.fill")
+        sugarLarge2.image=UIImage(systemName: "cube.fill")
+        sugarLarge3.image=UIImage(systemName: "cube.fill")
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpUI()
