@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 class RegisterViewController: UIViewController {
     
@@ -25,7 +26,31 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var repPasswordField: UITextField!
     
+    func signUp()
+    {
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        let newUser = User(context: context)
+        if(passwordField.text != repPasswordField.text)
+        {
+            print("Password fields don't match")
+        }
+        else
+        {
+            newUser.email = emailField.text
+            newUser.password = passwordField.text
+            do
+            {
+                try context.save()
+            }
+            catch
+            {
+                print("An error has occured")
+            }
+        }
+    }
+    
     @IBAction func signUpButton(_ sender: Any) {
+        signUp()
         print("You pressed sign up")
     }
     /*

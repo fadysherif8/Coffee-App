@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 class LogInViewController: UIViewController {
     //This is just for styling purposes
@@ -22,6 +23,83 @@ class LogInViewController: UIViewController {
     @IBOutlet weak var logEmailField: UITextField!
 
     @IBOutlet weak var logPassField: UITextField!
+    
+    public func getUserID()
+    {
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        do
+        {
+            let predict = NSPredicate(format: "username = %@", "Test")
+            let req: NSFetchRequest<User> = User.fetchRequest()
+            req.predicate = predict
+            let users = try context.fetch(req)
+            for user in users
+            {
+                print(user.id)
+            }
+        } catch
+        {
+            print("An error has occured")
+        }
+    }
+    
+    public func getAllPasswords()
+    {
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        do
+        {
+            let users = try context.fetch(User.fetchRequest())
+            for user in users
+            {
+                print((user as AnyObject).password!)
+            }
+        } catch
+        {
+            print("An error has occured")
+        }
+    }
+    
+    public func getUserPassword()
+    {
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        do
+        {
+            let predict = NSPredicate(format: "username = %@", "Test")
+            let req: NSFetchRequest<User> = User.fetchRequest()
+            req.predicate = predict
+            let users = try context.fetch(req)
+            for user in users
+            {
+                print(user.password!)
+            }
+        } catch
+        {
+            print("An error has occured")
+        }
+    }
+    
+    func signIn()
+    {
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        do
+        {
+            let users = try context.fetch(User.fetchRequest())
+            for user in users
+            {
+                if((user as AnyObject).password == logPassField.text && (user as AnyObject).email == logEmailField.text)
+                {
+                    //go next view
+                }
+                else
+                {
+                    print("Login in error")
+                }
+            }
+        } catch
+        {
+            print("An error has occured")
+        }
+    }
     
     @IBAction func logInButton(_ sender: Any) {
         print("You pressed Sign in")
