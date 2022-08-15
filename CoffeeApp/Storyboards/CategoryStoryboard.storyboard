@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Lov-p0-VYn">
-                                <rect key="frame" x="0.0" y="88" width="390" height="756"/>
+                                <rect key="frame" x="0.0" y="88" width="390" height="673"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="listCell" rowHeight="142" id="xtS-iN-DeB" customClass="CoffeeTableViewCell" customModule="CoffeeApp" customModuleProvider="target">
@@ -78,10 +78,10 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="Lov-p0-VYn" secondAttribute="bottom" id="6gT-Pd-LLS"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Lov-p0-VYn" secondAttribute="trailing" id="CUn-1T-LY1"/>
-                            <constraint firstItem="Lov-p0-VYn" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="I7d-Mu-3bY"/>
-                            <constraint firstItem="Lov-p0-VYn" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="R2o-vt-Rc4"/>
+                            <constraint firstItem="Lov-p0-VYn" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="dF9-KL-9yD"/>
+                            <constraint firstItem="Lov-p0-VYn" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="h2P-yo-5cw"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Lov-p0-VYn" secondAttribute="bottom" id="lEU-SK-FaQ"/>
+                            <constraint firstItem="Lov-p0-VYn" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="tq7-VQ-LJJ"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="homekit" catalog="system" id="KY5-iC-Kae"/>
@@ -117,10 +117,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.68627450980000004" green="0.49803921569999998" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="aPe-oT-DEE" kind="relationship" relationship="viewControllers" id="Fg9-zH-Tpo"/>
-                        <segue destination="abG-bv-cUe" kind="relationship" relationship="viewControllers" id="SPX-q5-Gao"/>
+                        <segue destination="abG-bv-cUe" kind="relationship" relationship="viewControllers" id="qaR-Sf-9K4"/>
                     </connections>
                 </tabBarController>
             </objects>
@@ -130,7 +131,7 @@
         <scene sceneID="w50-yW-uTT">
             <objects>
                 <viewControllerPlaceholder storyboardIdentifier="ProfileViewController" storyboardName="ProfileStoryboard" referencedIdentifier="ProfileViewController" id="abG-bv-cUe" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="person" catalog="system" id="Ojp-oU-c7h"/>
+                    <tabBarItem key="tabBarItem" title="" id="Ojp-oU-c7h"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PKl-v0-0fX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -164,7 +165,6 @@
         <image name="chevron.right" catalog="system" width="96" height="128"/>
         <image name="homekit" catalog="system" width="128" height="106"/>
         <image name="macciato" width="600" height="600"/>
-        <image name="person" catalog="system" width="128" height="117"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

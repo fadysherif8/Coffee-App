@@ -27,14 +27,6 @@
                                 <rect key="frame" x="120" y="189" width="175" height="175"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSp-uc-kZN">
-                                <rect key="frame" x="57" y="772" width="300" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="logOutButton:" destination="Prx-Yj-rLW" eventType="touchUpInside" id="036-pU-lQ4"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0u3-TQ-N4b">
                                 <rect key="frame" x="35" y="465" width="57" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -63,10 +55,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSp-uc-kZN">
+                                <rect key="frame" x="50" y="783" width="314" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="logOutButton:" destination="Prx-Yj-rLW" eventType="touchUpInside" id="036-pU-lQ4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yGB-Vc-OWo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yGB-Vc-OWo" firstAttribute="trailing" secondItem="XSp-uc-kZN" secondAttribute="trailing" constant="50" id="CPb-aJ-c28"/>
+                            <constraint firstItem="yGB-Vc-OWo" firstAttribute="bottom" secondItem="XSp-uc-kZN" secondAttribute="bottom" id="cxK-Sk-gCi"/>
+                            <constraint firstItem="XSp-uc-kZN" firstAttribute="leading" secondItem="yGB-Vc-OWo" secondAttribute="leading" constant="50" id="ow4-gj-0bc"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="person" catalog="system" id="Ltb-w7-Bkd"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="logOutOutlet" destination="XSp-uc-kZN" id="j8v-Yy-gr9"/>
                         <outlet property="profileView" destination="ZXI-Wf-D36" id="yPj-d0-TfS"/>
@@ -79,6 +85,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="person" catalog="system" width="128" height="117"/>
         <image name="test" width="64" height="64"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
