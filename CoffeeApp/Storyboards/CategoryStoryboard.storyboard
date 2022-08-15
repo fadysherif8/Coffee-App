@@ -88,7 +88,9 @@
                             <constraint firstItem="Lov-p0-VYn" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="tq7-VQ-LJJ"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="homekit" catalog="system" id="KY5-iC-Kae"/>
+                    <tabBarItem key="tabBarItem" title="" image="homekit" catalog="system" id="KY5-iC-Kae">
+                        <color key="badgeColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" title="Menu" id="ReU-vB-lLt">
                         <barButtonItem key="rightBarButtonItem" image="cart" catalog="system" id="FIO-kX-Tbo">
                             <color key="tintColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -107,7 +109,7 @@
         <scene sceneID="4Ft-xJ-NN7">
             <objects>
                 <viewControllerPlaceholder storyboardName="CartScreenStoryboard" referencedIdentifier="cartScreen" id="OdX-5Z-pFq" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="9KF-sx-XcR"/>
+                    <navigationItem key="navigationItem" title="My Cart" id="9KF-sx-XcR"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rRn-Kq-ETf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -131,7 +133,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" red="0.68627450980000004" green="0.49803921569999998" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="aPe-oT-DEE" kind="relationship" relationship="viewControllers" id="Fg9-zH-Tpo"/>

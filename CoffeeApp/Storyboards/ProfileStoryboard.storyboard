@@ -78,7 +78,9 @@
                         <viewLayoutGuide key="safeArea" id="yGB-Vc-OWo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="person" catalog="system" id="Ltb-w7-Bkd"/>
+                    <tabBarItem key="tabBarItem" title="" image="person" catalog="system" id="Ltb-w7-Bkd">
+                        <color key="badgeColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="logOutOutlet" destination="ETj-jO-OfD" id="ycL-FX-hNr"/>
