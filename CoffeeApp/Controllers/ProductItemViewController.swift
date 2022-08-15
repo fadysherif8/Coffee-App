@@ -9,6 +9,17 @@ import UIKit
 
 class ProductItemViewController: UIViewController {
     
+    @IBOutlet weak var itemCount: UILabel!
+    
+    @IBAction func decrementButton(_ sender: Any) {
+        print("- 1")
+    }
+    
+    @IBAction func incrementButton(_ sender: Any) {
+        print("+ 1")
+        //var new=Int(itemCount.text!) ?? 0
+    }
+    
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var button3: UIButton!
     @IBOutlet weak var button2: UIButton!
@@ -65,6 +76,7 @@ class ProductItemViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpUI()
+        itemCount.text="\(0)"
         
     }
     func setUpUI(){

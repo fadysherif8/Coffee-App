@@ -12,7 +12,7 @@
         <!--Product Item View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="ProductItemViewController" customModule="CoffeeApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="productItemScreen" id="Y6W-OH-hqX" customClass="ProductItemViewController" customModule="CoffeeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -58,7 +58,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="macciato" translatesAutoresizingMaskIntoConstraints="NO" id="wXn-k0-3uD">
-                                        <rect key="frame" x="93" y="52" width="205" height="235"/>
+                                        <rect key="frame" x="93" y="94" width="205" height="193"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
@@ -104,6 +104,9 @@
                                     <color key="baseForegroundColor" red="0.1215686351" green="0.109803915" blue="0.11372549830000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="baseBackgroundColor" red="0.95928032289999998" green="0.95928032289999998" blue="0.95928032289999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="decrementButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Zph-rf-SO0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vJr-f3-L3k">
                                 <rect key="frame" x="297" y="338" width="60" height="40"/>
@@ -125,6 +128,9 @@
                                     <color key="baseForegroundColor" red="0.1215686351" green="0.109803915" blue="0.11372549830000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="baseBackgroundColor" red="0.95928032289999998" green="0.95928032289999998" blue="0.95928032289999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="incrementButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="sII-nx-xIz"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gV5-H4-Wvw">
                                 <rect key="frame" x="208" y="344" width="13" height="27"/>
@@ -250,12 +256,12 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="uP1-ob-Pte"/>
                     <connections>
                         <outlet property="addCartOutlet" destination="QwV-aP-QrC" id="gvd-Tl-MON"/>
                         <outlet property="button1" destination="aYj-d2-st7" id="VQq-PP-Syb"/>
                         <outlet property="button2" destination="q4A-21-sCx" id="Lqb-iX-sjS"/>
                         <outlet property="button3" destination="ej7-kk-nl3" id="Su7-yJ-4jA"/>
+                        <outlet property="itemCount" destination="gV5-H4-Wvw" id="jfY-O5-6Da"/>
                         <outlet property="minusOutlet" destination="zs0-jM-Lvm" id="06N-DY-35s"/>
                         <outlet property="plusOutlet" destination="vJr-f3-L3k" id="OnZ-Mg-i88"/>
                         <outlet property="priceField" destination="zgB-pm-v9P" id="KwQ-Tp-CBs"/>

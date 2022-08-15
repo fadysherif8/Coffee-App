@@ -8,7 +8,11 @@
 import UIKit
 
 class CategoryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    
+    @IBAction func cartButton(_ sender: Any) {
+        print("You are in cart")
+    }
+    
     var coffees = ["Espresso","Cappuccino","Macciato","Mocha","Latte"]
     
     override func viewDidLoad() {
