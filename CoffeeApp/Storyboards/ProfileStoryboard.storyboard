@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yij-WP-xdD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -8,24 +8,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
-        <scene sceneID="FWA-ya-mbr">
-            <objects>
-                <tabBarController id="yij-WP-xdD" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8vb-Gg-hm0">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="Prx-Yj-rLW" kind="relationship" relationship="viewControllers" id="xvX-tb-3rc"/>
-                        <segue destination="kbY-cs-1dj" kind="relationship" relationship="viewControllers" id="foa-eb-d7a"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qiG-MA-V3z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="746" y="76"/>
-        </scene>
         <!--Profile View Controller-->
         <scene sceneID="nKT-Jz-Q1B">
             <objects>
@@ -85,7 +67,6 @@
                         <viewLayoutGuide key="safeArea" id="yGB-Vc-OWo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="person" catalog="system" id="y08-5j-ADg"/>
                     <connections>
                         <outlet property="logOutOutlet" destination="XSp-uc-kZN" id="j8v-Yy-gr9"/>
                         <outlet property="profileView" destination="ZXI-Wf-D36" id="yPj-d0-TfS"/>
@@ -96,20 +77,8 @@
             </objects>
             <point key="canvasLocation" x="1660.8695652173915" y="75.669642857142847"/>
         </scene>
-        <!--CategoryViewController-->
-        <scene sceneID="B9c-6M-sRz">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="CategoryViewController" storyboardName="CategoryStoryboard" referencedIdentifier="CategoryViewController" id="kbY-cs-1dj" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="homekit" catalog="system" id="zMK-97-jYR"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iQv-gr-EdG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2445" y="58"/>
-        </scene>
     </scenes>
     <resources>
-        <image name="homekit" catalog="system" width="128" height="106"/>
-        <image name="person" catalog="system" width="128" height="117"/>
         <image name="test" width="64" height="64"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
