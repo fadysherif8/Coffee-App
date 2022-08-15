@@ -94,6 +94,7 @@
                             <color key="tintColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="cartButton:" destination="Y6W-OH-hqX" id="wrl-tL-Ftb"/>
+                                <segue destination="OdX-5Z-pFq" kind="show" id="959-pA-ec8"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -101,6 +102,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1206.1538461538462" y="-619.19431279620846"/>
+        </scene>
+        <!--cartScreen-->
+        <scene sceneID="4Ft-xJ-NN7">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CartScreenStoryboard" referencedIdentifier="cartScreen" id="OdX-5Z-pFq" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="9KF-sx-XcR"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rRn-Kq-ETf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1788" y="-687"/>
         </scene>
         <!--ProductItemStoryboard-->
         <scene sceneID="zGj-aa-SX6">
@@ -110,7 +121,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wcI-1c-f0C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1902" y="-619"/>
+            <point key="canvasLocation" x="1849" y="-559"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="d0o-L9-WkC">
@@ -129,7 +140,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MmS-qb-7Xl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1263" y="-908"/>
+            <point key="canvasLocation" x="-689" y="-619"/>
         </scene>
         <!--ProfileViewController-->
         <scene sceneID="w50-yW-uTT">
@@ -139,7 +150,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PKl-v0-0fX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1143" y="-429"/>
+            <point key="canvasLocation" x="-689" y="-220"/>
         </scene>
         <!--Item-->
         <scene sceneID="TVO-rP-hmv">

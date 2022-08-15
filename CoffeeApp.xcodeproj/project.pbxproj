@@ -22,6 +22,8 @@
 		0B481FE928A69756005F434C /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B481FE828A69756005F434C /* LogInViewController.swift */; };
 		0B481FEB28A6AC58005F434C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B481FEA28A6AC58005F434C /* ProfileViewController.swift */; };
 		0BE3CA3A28AAFE9F00D3A1C8 /* CoffeeListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE3CA3928AAFE9F00D3A1C8 /* CoffeeListModel.swift */; };
+		0BE3CA3C28AB063400D3A1C8 /* CartScreenStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BE3CA3B28AB063400D3A1C8 /* CartScreenStoryboard.storyboard */; };
+		0BE3CA3E28AB065100D3A1C8 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE3CA3D28AB065100D3A1C8 /* CartViewController.swift */; };
 		0BECD0DE28A80BB200B26C23 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BECD0DD28A80BB200B26C23 /* CategoryViewController.swift */; };
 		0BECD0E028A80BC200B26C23 /* CategoryStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BECD0DF28A80BC200B26C23 /* CategoryStoryboard.storyboard */; };
 /* End PBXBuildFile section */
@@ -44,6 +46,8 @@
 		0B481FE828A69756005F434C /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		0B481FEA28A6AC58005F434C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		0BE3CA3928AAFE9F00D3A1C8 /* CoffeeListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeListModel.swift; sourceTree = "<group>"; };
+		0BE3CA3B28AB063400D3A1C8 /* CartScreenStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CartScreenStoryboard.storyboard; sourceTree = "<group>"; };
+		0BE3CA3D28AB065100D3A1C8 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		0BECD0DD28A80BB200B26C23 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		0BECD0DF28A80BC200B26C23 /* CategoryStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CategoryStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,6 +71,7 @@
 				0B481FE828A69756005F434C /* LogInViewController.swift */,
 				0B1E1DD128A7C073001ACB32 /* ProductItemViewController.swift */,
 				0BECD0DD28A80BB200B26C23 /* CategoryViewController.swift */,
+				0BE3CA3D28AB065100D3A1C8 /* CartViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -79,6 +84,7 @@
 				0B1E1DCD28A7AB6F001ACB32 /* ProfileStoryboard.storyboard */,
 				0B1E1DCF28A7C027001ACB32 /* ProductItemStoryboard.storyboard */,
 				0BECD0DF28A80BC200B26C23 /* CategoryStoryboard.storyboard */,
+				0BE3CA3B28AB063400D3A1C8 /* CartScreenStoryboard.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -183,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B481FDF28A696A3005F434C /* LaunchScreen.storyboard in Resources */,
+				0BE3CA3C28AB063400D3A1C8 /* CartScreenStoryboard.storyboard in Resources */,
 				0B481FDC28A696A3005F434C /* Assets.xcassets in Resources */,
 				0BECD0E028A80BC200B26C23 /* CategoryStoryboard.storyboard in Resources */,
 				0B481FD728A696A2005F434C /* Main.storyboard in Resources */,
@@ -206,6 +213,7 @@
 				0B481FD228A696A2005F434C /* SceneDelegate.swift in Sources */,
 				0B481FDA28A696A2005F434C /* CoffeeApp.xcdatamodeld in Sources */,
 				0B481FE928A69756005F434C /* LogInViewController.swift in Sources */,
+				0BE3CA3E28AB065100D3A1C8 /* CartViewController.swift in Sources */,
 				0B481FE728A69738005F434C /* RegisterViewController.swift in Sources */,
 				0BECD0DE28A80BB200B26C23 /* CategoryViewController.swift in Sources */,
 				0B1E1DD228A7C073001ACB32 /* ProductItemViewController.swift in Sources */,
