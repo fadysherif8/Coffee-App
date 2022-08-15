@@ -21,7 +21,6 @@
 		0B481FE728A69738005F434C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B481FE628A69738005F434C /* RegisterViewController.swift */; };
 		0B481FE928A69756005F434C /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B481FE828A69756005F434C /* LogInViewController.swift */; };
 		0B481FEB28A6AC58005F434C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B481FEA28A6AC58005F434C /* ProfileViewController.swift */; };
-		0BE3CA3428AAF91500D3A1C8 /* CoffeeListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE3CA3328AAF91500D3A1C8 /* CoffeeListCell.swift */; };
 		0BECD0DE28A80BB200B26C23 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BECD0DD28A80BB200B26C23 /* CategoryViewController.swift */; };
 		0BECD0E028A80BC200B26C23 /* CategoryStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BECD0DF28A80BC200B26C23 /* CategoryStoryboard.storyboard */; };
 /* End PBXBuildFile section */
@@ -43,7 +42,7 @@
 		0B481FE628A69738005F434C /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		0B481FE828A69756005F434C /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		0B481FEA28A6AC58005F434C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		0BE3CA3328AAF91500D3A1C8 /* CoffeeListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeListCell.swift; sourceTree = "<group>"; };
+		0BE3CA3728AAF9CC00D3A1C8 /* CoffeeListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeListCell.swift; sourceTree = "<group>"; };
 		0BECD0DD28A80BB200B26C23 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		0BECD0DF28A80BC200B26C23 /* CategoryStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CategoryStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,6 +101,7 @@
 		0B481FCE28A696A2005F434C /* CoffeeApp */ = {
 			isa = PBXGroup;
 			children = (
+				0BE3CA3628AAF9C300D3A1C8 /* Data */,
 				0BECD0DA28A808B600B26C23 /* Data Models */,
 				0B1E1DCA28A7AAD4001ACB32 /* Storyboards */,
 				0B1E1DC928A7A9F2001ACB32 /* Controllers */,
@@ -115,11 +115,18 @@
 			path = CoffeeApp;
 			sourceTree = "<group>";
 		};
+		0BE3CA3628AAF9C300D3A1C8 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0BE3CA3728AAF9CC00D3A1C8 /* CoffeeListCell.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		0BECD0DA28A808B600B26C23 /* Data Models */ = {
 			isa = PBXGroup;
 			children = (
 				0B22455528A8474B00BFE1C2 /* CoffeeTableViewCell.swift */,
-				0BE3CA3328AAF91500D3A1C8 /* CoffeeListCell.swift */,
 			);
 			name = "Data Models";
 			path = "../../Data Models";
@@ -203,7 +210,6 @@
 				0B22455628A8474B00BFE1C2 /* CoffeeTableViewCell.swift in Sources */,
 				0B481FEB28A6AC58005F434C /* ProfileViewController.swift in Sources */,
 				0B481FD028A696A2005F434C /* AppDelegate.swift in Sources */,
-				0BE3CA3428AAF91500D3A1C8 /* CoffeeListCell.swift in Sources */,
 				0B481FD228A696A2005F434C /* SceneDelegate.swift in Sources */,
 				0B481FDA28A696A2005F434C /* CoffeeApp.xcdatamodeld in Sources */,
 				0B481FE928A69756005F434C /* LogInViewController.swift in Sources */,
