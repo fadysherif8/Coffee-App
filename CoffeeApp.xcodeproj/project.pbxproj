@@ -30,7 +30,7 @@
 		0B1E1DCD28A7AB6F001ACB32 /* ProfileStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileStoryboard.storyboard; sourceTree = "<group>"; };
 		0B1E1DCF28A7C027001ACB32 /* ProductItemStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProductItemStoryboard.storyboard; sourceTree = "<group>"; };
 		0B1E1DD128A7C073001ACB32 /* ProductItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItemViewController.swift; sourceTree = "<group>"; };
-		0B22455528A8474B00BFE1C2 /* CoffeeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		0B22455528A8474B00BFE1C2 /* CoffeeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CoffeeTableViewCell.swift; path = CoffeeApp/newData/CoffeeTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		0B481FCC28A696A2005F434C /* CoffeeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B481FCF28A696A2005F434C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B481FD128A696A2005F434C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,8 +100,7 @@
 		0B481FCE28A696A2005F434C /* CoffeeApp */ = {
 			isa = PBXGroup;
 			children = (
-				0BE3CA3628AAF9C300D3A1C8 /* Data */,
-				0BECD0DA28A808B600B26C23 /* Data Models */,
+				0BE3CA3828AAFE0F00D3A1C8 /* newData */,
 				0B1E1DCA28A7AAD4001ACB32 /* Storyboards */,
 				0B1E1DC928A7A9F2001ACB32 /* Controllers */,
 				0B481FCF28A696A2005F434C /* AppDelegate.swift */,
@@ -114,20 +113,12 @@
 			path = CoffeeApp;
 			sourceTree = "<group>";
 		};
-		0BE3CA3628AAF9C300D3A1C8 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
-		0BECD0DA28A808B600B26C23 /* Data Models */ = {
+		0BE3CA3828AAFE0F00D3A1C8 /* newData */ = {
 			isa = PBXGroup;
 			children = (
 				0B22455528A8474B00BFE1C2 /* CoffeeTableViewCell.swift */,
 			);
-			name = "Data Models";
-			path = "../../Data Models";
+			path = newData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
