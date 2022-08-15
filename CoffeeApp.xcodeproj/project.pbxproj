@@ -21,9 +21,9 @@
 		0B481FE728A69738005F434C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B481FE628A69738005F434C /* RegisterViewController.swift */; };
 		0B481FE928A69756005F434C /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B481FE828A69756005F434C /* LogInViewController.swift */; };
 		0B481FEB28A6AC58005F434C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B481FEA28A6AC58005F434C /* ProfileViewController.swift */; };
+		0BE3CA3428AAF91500D3A1C8 /* CoffeeListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE3CA3328AAF91500D3A1C8 /* CoffeeListCell.swift */; };
 		0BECD0DE28A80BB200B26C23 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BECD0DD28A80BB200B26C23 /* CategoryViewController.swift */; };
 		0BECD0E028A80BC200B26C23 /* CategoryStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BECD0DF28A80BC200B26C23 /* CategoryStoryboard.storyboard */; };
-		9667C30528AAEC2B003952B8 /* CoffeeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9667C30428AAEC2B003952B8 /* CoffeeList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,9 +43,9 @@
 		0B481FE628A69738005F434C /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		0B481FE828A69756005F434C /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		0B481FEA28A6AC58005F434C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		0BE3CA3328AAF91500D3A1C8 /* CoffeeListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeListCell.swift; sourceTree = "<group>"; };
 		0BECD0DD28A80BB200B26C23 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		0BECD0DF28A80BC200B26C23 /* CategoryStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CategoryStoryboard.storyboard; sourceTree = "<group>"; };
-		9667C30428AAEC2B003952B8 /* CoffeeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				0B22455528A8474B00BFE1C2 /* CoffeeTableViewCell.swift */,
-				9667C30428AAEC2B003952B8 /* CoffeeList.swift */,
+				0BE3CA3328AAF91500D3A1C8 /* CoffeeListCell.swift */,
 			);
 			name = "Data Models";
 			path = "../../Data Models";
@@ -203,11 +203,11 @@
 				0B22455628A8474B00BFE1C2 /* CoffeeTableViewCell.swift in Sources */,
 				0B481FEB28A6AC58005F434C /* ProfileViewController.swift in Sources */,
 				0B481FD028A696A2005F434C /* AppDelegate.swift in Sources */,
+				0BE3CA3428AAF91500D3A1C8 /* CoffeeListCell.swift in Sources */,
 				0B481FD228A696A2005F434C /* SceneDelegate.swift in Sources */,
 				0B481FDA28A696A2005F434C /* CoffeeApp.xcdatamodeld in Sources */,
 				0B481FE928A69756005F434C /* LogInViewController.swift in Sources */,
 				0B481FE728A69738005F434C /* RegisterViewController.swift in Sources */,
-				9667C30528AAEC2B003952B8 /* CoffeeList.swift in Sources */,
 				0BECD0DE28A80BB200B26C23 /* CategoryViewController.swift in Sources */,
 				0B1E1DD228A7C073001ACB32 /* ProductItemViewController.swift in Sources */,
 			);
