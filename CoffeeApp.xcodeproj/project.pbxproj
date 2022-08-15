@@ -42,7 +42,6 @@
 		0B481FE628A69738005F434C /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		0B481FE828A69756005F434C /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		0B481FEA28A6AC58005F434C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		0BE3CA3728AAF9CC00D3A1C8 /* CoffeeListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeListCell.swift; sourceTree = "<group>"; };
 		0BECD0DD28A80BB200B26C23 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		0BECD0DF28A80BC200B26C23 /* CategoryStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CategoryStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -118,7 +117,6 @@
 		0BE3CA3628AAF9C300D3A1C8 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				0BE3CA3728AAF9CC00D3A1C8 /* CoffeeListCell.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
