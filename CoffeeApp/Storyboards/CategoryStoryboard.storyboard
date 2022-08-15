@@ -47,6 +47,7 @@
                                                     <color key="tintColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <state key="normal" image="chevron.right" catalog="system"/>
                                                     <connections>
+                                                        <action selector="onClickDetailsButton:" destination="xtS-iN-DeB" eventType="touchUpInside" id="DYe-P3-fPc"/>
                                                         <segue destination="rDR-rX-LIe" kind="show" id="kyy-LT-jQX"/>
                                                     </connections>
                                                 </button>
@@ -65,6 +66,8 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="detailsButton" destination="bGV-CU-WnO" id="Hms-4z-D3x"/>
+                                            <outlet property="drinkImage" destination="qcR-BS-vsm" id="8ZO-OF-uZn"/>
                                             <outlet property="drinkName" destination="zMY-lB-3RK" id="STv-Wb-KYz"/>
                                         </connections>
                                     </tableViewCell>

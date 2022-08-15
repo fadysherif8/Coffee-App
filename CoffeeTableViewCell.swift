@@ -7,9 +7,25 @@
 
 import UIKit
 
-class CoffeeTableViewCell: UITableViewCell {
+protocol CoffeeTableViewCellDelegate: AnyObject {
+    func didTapButton(drinkName: String, drinkImage: UIImage)
+}
 
+class CoffeeTableViewCell: UITableViewCell {
+    
+    weak var delegate: CoffeeTableViewCellDelegate?
+
+    @IBOutlet weak var detailsButton: UIButton!
     @IBOutlet weak var drinkName: UILabel!
+    @IBOutlet weak var drinkImage: UIImageView!
+    
+    
+    @IBAction func onClickDetailsButton(_ sender: Any) {
+        delegate?.didTapButton(drinkName: drinkName.text!, drinkImage: drinkImage.image!)
+        
+    }
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

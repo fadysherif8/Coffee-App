@@ -8,7 +8,9 @@
 import UIKit
 
 class ProductItemViewController: UIViewController {
+    @IBOutlet weak var drinkImage: UIImageView!
     
+    @IBOutlet weak var drinkName: UILabel!
     @IBOutlet weak var itemCount: UILabel!
     
     @IBAction func decrementButton(_ sender: Any) {
@@ -77,8 +79,17 @@ class ProductItemViewController: UIViewController {
         super.viewDidLoad()
         setUpUI()
         itemCount.text="\(0)"
+        displayData()
         
     }
+    
+    // Function to display corresponding drink data
+    func displayData() {
+        drinkName.text = CategoryViewController.currentDrinkName
+        drinkImage.image = CategoryViewController.currentDrinkImage
+        
+    }
+    
     func setUpUI(){
         //This function is used to make rounded corners in different ui components
         addCartOutlet.clipsToBounds=true
