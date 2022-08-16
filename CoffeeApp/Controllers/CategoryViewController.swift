@@ -14,9 +14,6 @@ class CategoryViewController: UIViewController, UITableViewDelegate, UITableView
     
     var coffees = [Coffee(title: "Espresso", image: UIImage(named: "espresso2")!), Coffee(title: "Cappuccino", image: UIImage(named: "cappuccino")!), Coffee(title: "Macciato", image: UIImage(named: "latte-macchiato")!), Coffee(title: "Mocha", image: UIImage(named: "mocha (1)")!), Coffee(title: "Latte", image: UIImage(named: "latte")!),]
     
-    @IBAction func cartButton(_ sender: Any) {
-        print("You are in cart")
-    }
     
   //  var coffees = ["Espresso","Cappuccino","Macciato","Mocha","Latte"]
     

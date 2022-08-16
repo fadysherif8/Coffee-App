@@ -95,7 +95,6 @@
                         <barButtonItem key="rightBarButtonItem" image="cart" catalog="system" id="FIO-kX-Tbo">
                             <color key="tintColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
-                                <action selector="cartButton:" destination="Y6W-OH-hqX" id="wrl-tL-Ftb"/>
                                 <segue destination="OdX-5Z-pFq" kind="show" id="959-pA-ec8"/>
                             </connections>
                         </barButtonItem>

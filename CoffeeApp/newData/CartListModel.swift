@@ -11,12 +11,12 @@ import UIKit
 class CartItem{
     var title: String
     var image: UIImage
-    var price: String
+    var price: Int
     var sugar: String
     var size: String
     var count: Int
     
-    init(title: String, image: UIImage, price: String, sugar: String, size: String, count: Int){
+    init(title: String, image: UIImage, price: Int, sugar: String, size: String, count: Int){
         self.title = title
         self.image = image
         self.price = price

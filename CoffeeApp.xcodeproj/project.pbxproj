@@ -26,6 +26,7 @@
 		0BE3CA3E28AB065100D3A1C8 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE3CA3D28AB065100D3A1C8 /* CartViewController.swift */; };
 		0BECD0DE28A80BB200B26C23 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BECD0DD28A80BB200B26C23 /* CategoryViewController.swift */; };
 		0BECD0E028A80BC200B26C23 /* CategoryStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BECD0DF28A80BC200B26C23 /* CategoryStoryboard.storyboard */; };
+		965DEDFF28ABD1FC0003E291 /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965DEDFE28ABD1FC0003E291 /* CartTableViewCell.swift */; };
 		9667C31228AB6EAF003952B8 /* CartListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9667C31128AB6EAF003952B8 /* CartListModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		0BE3CA3D28AB065100D3A1C8 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		0BECD0DD28A80BB200B26C23 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		0BECD0DF28A80BC200B26C23 /* CategoryStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CategoryStoryboard.storyboard; sourceTree = "<group>"; };
+		965DEDFE28ABD1FC0003E291 /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
 		9667C31128AB6EAF003952B8 /* CartListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartListModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,6 +131,7 @@
 				0B22455528A8474B00BFE1C2 /* CoffeeTableViewCell.swift */,
 				0BE3CA3928AAFE9F00D3A1C8 /* CoffeeListModel.swift */,
 				9667C31128AB6EAF003952B8 /* CartListModel.swift */,
+				965DEDFE28ABD1FC0003E291 /* CartTableViewCell.swift */,
 			);
 			path = newData;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				0B481FDA28A696A2005F434C /* CoffeeApp.xcdatamodeld in Sources */,
 				0B481FE928A69756005F434C /* LogInViewController.swift in Sources */,
 				0BE3CA3E28AB065100D3A1C8 /* CartViewController.swift in Sources */,
+				965DEDFF28ABD1FC0003E291 /* CartTableViewCell.swift in Sources */,
 				0B481FE728A69738005F434C /* RegisterViewController.swift in Sources */,
 				0BECD0DE28A80BB200B26C23 /* CategoryViewController.swift in Sources */,
 				0B1E1DD228A7C073001ACB32 /* ProductItemViewController.swift in Sources */,
