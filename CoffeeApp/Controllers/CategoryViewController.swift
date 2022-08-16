@@ -24,9 +24,9 @@ class CategoryViewController: UIViewController, UITableViewDelegate, UITableView
         var everything = [Product]()
             do {
                 everything = try context.fetch(Product.fetchRequest())
-                for all in everything{
-                    prods[count].image = UIImage(named: all.image!)!
-                    prods[count].title = all.productname!
+                for all in everything
+                {
+                    prods.append(Coffee(title: all.productname!, image: UIImage(named: all.image!)!))
                     count+=1
                 }
                 print("Data loaded in Category View Successfully!")

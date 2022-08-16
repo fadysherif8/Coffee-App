@@ -33,6 +33,8 @@ class RegisterViewController: UIViewController {
         if(passwordField.text != repPasswordField.text)
         {
             let alert = UIAlertController(title: "Error", message: "Passwords fields don't match", preferredStyle: .alert)
+            let cancelAction = UIAlertAction(title: "Ok", style: .cancel)
+            alert.addAction(cancelAction)
             self.present(alert, animated: true, completion: nil)
         }
         else
@@ -46,6 +48,8 @@ class RegisterViewController: UIViewController {
             catch
             {
                 let alert = UIAlertController(title: "Error", message: "Registration error has occured", preferredStyle: .alert)
+                let cancelAction = UIAlertAction(title: "Ok", style: .cancel)
+                alert.addAction(cancelAction)
                 self.present(alert, animated: true, completion: nil)
             }
         }
