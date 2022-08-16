@@ -16,4 +16,9 @@ class Coffee{
         self.title = title
         self.image = image
     }
+    init()
+    {
+        image = UIImage(named: "")!
+        title = ""
+    }
 }

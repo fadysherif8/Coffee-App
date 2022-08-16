@@ -6,32 +6,55 @@
 //
 
 import UIKit
+import CoreData
 
 class CategoryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     static var currentDrinkName = "Default"
     static var currentDrinkImage: UIImage?
     
-    var coffees = [Coffee(title: "Espresso", image: UIImage(named: "espresso2")!), Coffee(title: "Cappuccino", image: UIImage(named: "cappuccino")!), Coffee(title: "Macciato", image: UIImage(named: "latte-macchiato")!), Coffee(title: "Mocha", image: UIImage(named: "mocha (1)")!), Coffee(title: "Latte", image: UIImage(named: "latte")!),]
+    //var coffees = [Coffee(title: "Espresso", image: UIImage(named: "espresso2")!), Coffee(title: "Cappuccino", image: UIImage(named: "cappuccino")!), Coffee(title: "Macciato", image: UIImage(named: "latte-macchiato")!), Coffee(title: "Mocha", image: UIImage(named: "mocha (1)")!), Coffee(title: "Latte", image: UIImage(named: "latte")!)]
     
+    var prods = [Coffee]()
+    
+    func loadingData()
+    {
+        var count = 0
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        var everything = [Product]()
+            do {
+                everything = try context.fetch(Product.fetchRequest())
+                for all in everything{
+                    prods[count].image = UIImage(named: all.image!)!
+                    prods[count].title = all.productname!
+                    count+=1
+                }
+                print("Data loaded in Category View Successfully!")
+            } catch {
+                print("An error has occured while loading data in category view controller")
+            }
+    }
+    
+    //var allProducts : [Coffee]
     
   //  var coffees = ["Espresso","Cappuccino","Macciato","Mocha","Latte"]
     
     override func viewDidLoad() {
+        loadingData()
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return coffees.count
+        return prods.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCell(withIdentifier: "listCell") as! CoffeeTableViewCell
         
-        cell.drinkName.text = coffees[indexPath.row].title
-        cell.drinkImage.image = coffees[indexPath.row].image
+        cell.drinkName.text = prods[indexPath.row].title
+        cell.drinkImage.image = prods[indexPath.row].image
         
         cell.delegate = self
         

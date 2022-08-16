@@ -82,9 +82,39 @@ class LogInViewController: UIViewController {
         }
     }
     
-    func signIn()
+    func loadProducts()
     {
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        let newProduct1 = Product(context: context)
+        let newProduct2 = Product(context: context)
+        let newProduct3 = Product(context: context)
+        let newProduct4 = Product(context: context)
+        let newProduct5 = Product(context: context)
+        newProduct1.productname = "Espresso"
+        newProduct1.image = "espresso2"
+        newProduct2.productname = "Cappuccino"
+        newProduct2.image = "cappuccino"
+        newProduct3.productname = "Macciato"
+        newProduct3.image = "latte-macchiato"
+        newProduct4.productname = "Latte"
+        newProduct4.image = "latte"
+        newProduct5.productname = "Mocha"
+        newProduct5.image = "mocha (1)"
+        do
+        {
+            try context.save()
+            print("done")
+        }
+        catch
+        {
+            let alert = UIAlertController(title: "Error", message: "Registration error has occured", preferredStyle: .alert)
+            self.present(alert, animated: true, completion: nil)
+        }
+    }
+    
+    func signIn()
+    {
+        /*let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         do
         {
             let users = try context.fetch(User.fetchRequest())
@@ -93,28 +123,46 @@ class LogInViewController: UIViewController {
                 if((user as AnyObject).password == logPassField.text && (user as AnyObject).email == logEmailField.text)
                 {
                     //UnComment Next Line when you finish core data
-//                    self.performSegue(withIdentifier: "toCategoryScreen", sender: self)
+                    loadProducts()
+                    self.performSegue(withIdentifier: "toCategoryScreen", sender: self)
                 }
                 else
                 {
                     let alert = UIAlertController(title: "Error", message: "Login Error", preferredStyle: .alert)
                     self.present(alert, animated: true, completion: nil)
-                    //("Login in error")
                 }
             }
         } catch
         {
             let alert = UIAlertController(title: "Error", message: "An error has occured", preferredStyle: .alert)
             self.present(alert, animated: true, completion: nil)
-        }
+        }*/
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        var allUsers = [User]()
+            do {
+                allUsers = try context.fetch(User.fetchRequest())
+                for all in allUsers{
+                    if(all.password == logPassField.text && all.email == logEmailField.text)
+                    {
+                        loadProducts()
+                        self.performSegue(withIdentifier: "toCategoryScreen", sender: self)
+                    }
+                    else
+                    {
+                        print("User Not found")
+                    }
+                }
+            } catch {
+                print("an error has occured while logging in")
+            }
     }
     
     @IBAction func logInButton(_ sender: Any) {
         
         //function to take you to category screen after validating the user
         //Uncomment next line and then delete self.perfrom segue
-        //signIn()
-        self.performSegue(withIdentifier: "toCategoryScreen", sender: self)
+        signIn()
+        //self.performSegue(withIdentifier: "toCategoryScreen", sender: self)
     }
     /*
     // MARK: - Navigation
