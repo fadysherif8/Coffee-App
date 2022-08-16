@@ -15,6 +15,7 @@ class LogInViewController: UIViewController {
     //this button takes you to the create signUp Screen
     @IBAction func registerButton(_ sender: Any) {
         performSegue(withIdentifier: "toSignUp", sender: self)
+
     }
     
     override func viewDidLoad() {
