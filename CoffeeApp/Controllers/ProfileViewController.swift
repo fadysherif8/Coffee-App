@@ -31,7 +31,7 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var logOutOutlet: UIButton!
     
     @IBAction func logOutButton(_ sender: Any) {
-        print("You pressed log out")
+        self.performSegue(withIdentifier: "toLogInScreen", sender: self)
     }
     /*
     // MARK: - Navigation

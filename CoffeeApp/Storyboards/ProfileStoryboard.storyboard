@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Prx-Yj-rLW">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -86,11 +86,22 @@
                         <outlet property="logOutOutlet" destination="ETj-jO-OfD" id="ycL-FX-hNr"/>
                         <outlet property="profileView" destination="ZXI-Wf-D36" id="yPj-d0-TfS"/>
                         <outlet property="welcomeOutlet" destination="xvw-fc-FrD" id="O3P-Xi-vXy"/>
+                        <segue destination="QgJ-8X-gy6" kind="presentation" identifier="toLogInScreen" modalPresentationStyle="fullScreen" id="x10-wg-rZa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5iR-ax-YQF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1660.8695652173915" y="75.669642857142847"/>
+        </scene>
+        <!--LogInStoryboard-->
+        <scene sceneID="9ML-Or-4Yv">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LogInStoryboard" id="QgJ-8X-gy6" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="vAy-4n-Akr"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bDL-nm-uwY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2321" y="75"/>
         </scene>
     </scenes>
     <resources>

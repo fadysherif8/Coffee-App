@@ -9,6 +9,7 @@ import UIKit
 import CoreData
 
 class LogInViewController: UIViewController {
+    
     //This is just for styling purposes
     @IBOutlet weak var logInOutlet: UIButton!
     //this button takes you to the create signUp Screen
@@ -22,9 +23,9 @@ class LogInViewController: UIViewController {
         logInOutlet.layer.cornerRadius=logInOutlet.frame.height/2
 
     }
+    
     //These are used to get user data
     @IBOutlet weak var logEmailField: UITextField!
-
     @IBOutlet weak var logPassField: UITextField!
     
     public func getUserID()
@@ -91,8 +92,8 @@ class LogInViewController: UIViewController {
             {
                 if((user as AnyObject).password == logPassField.text && (user as AnyObject).email == logEmailField.text)
                 {
-                    //for Fady!
-                    //go next view here
+                    //UnComment Next Line when you finish core data
+//                    self.performSegue(withIdentifier: "toCategoryScreen", sender: self)
                 }
                 else
                 {
@@ -109,8 +110,11 @@ class LogInViewController: UIViewController {
     }
     
     @IBAction func logInButton(_ sender: Any) {
-        signIn()
-        print("You pressed Sign in")
+        
+        //function to take you to category screen after validating the user
+        //Uncomment next line and then delete self.perfrom segue
+        //signIn()
+        self.performSegue(withIdentifier: "toCategoryScreen", sender: self)
     }
     /*
     // MARK: - Navigation
