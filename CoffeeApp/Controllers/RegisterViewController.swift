@@ -32,7 +32,8 @@ class RegisterViewController: UIViewController {
         let newUser = User(context: context)
         if(passwordField.text != repPasswordField.text)
         {
-            print("Password fields don't match")
+            let alert = UIAlertController(title: "Error", message: "Passwords fields don't match", preferredStyle: .alert)
+            self.present(alert, animated: true, completion: nil)
         }
         else
         {
@@ -44,7 +45,8 @@ class RegisterViewController: UIViewController {
             }
             catch
             {
-                print("An error has occured")
+                let alert = UIAlertController(title: "Error", message: "Registration error has occured", preferredStyle: .alert)
+                self.present(alert, animated: true, completion: nil)
             }
         }
     }

@@ -91,20 +91,25 @@ class LogInViewController: UIViewController {
             {
                 if((user as AnyObject).password == logPassField.text && (user as AnyObject).email == logEmailField.text)
                 {
-                    //go next view
+                    //for Fady!
+                    //go next view here
                 }
                 else
                 {
-                    print("Login in error")
+                    let alert = UIAlertController(title: "Error", message: "Login Error", preferredStyle: .alert)
+                    self.present(alert, animated: true, completion: nil)
+                    //("Login in error")
                 }
             }
         } catch
         {
-            print("An error has occured")
+            let alert = UIAlertController(title: "Error", message: "An error has occured", preferredStyle: .alert)
+            self.present(alert, animated: true, completion: nil)
         }
     }
     
     @IBAction func logInButton(_ sender: Any) {
+        signIn()
         print("You pressed Sign in")
     }
     /*
