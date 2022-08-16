@@ -19,9 +19,16 @@ class LogInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
+        view.addGestureRecognizer(tap)
         logInOutlet.clipsToBounds=true
         logInOutlet.layer.cornerRadius=logInOutlet.frame.height/2
 
+    }
+    @objc func handleTap()
+    {
+        logEmailField.resignFirstResponder()
+        logPassField.resignFirstResponder()
     }
     
     //These are used to get user data

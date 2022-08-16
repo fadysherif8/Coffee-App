@@ -15,11 +15,18 @@ class RegisterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
+        view.addGestureRecognizer(tap)
         //For styling sign up button
         signUpOutlet.clipsToBounds=true
         signUpOutlet.layer.cornerRadius=signUpOutlet.frame.height/2
     }
-    //These are the otlets used to get user data
+    
+    @objc func handleTap()
+    {
+        passwordField.resignFirstResponder()
+        emailField.resignFirstResponder()
+    }    //These are the otlets used to get user data
     @IBOutlet weak var emailField: UITextField!
     
     @IBOutlet weak var nameField: UITextField!
@@ -44,7 +51,10 @@ class RegisterViewController: UIViewController {
             do
             {
                 try context.save()
-            }
+                let alert = UIAlertController(title: "Done", message: "User registered successfully", preferredStyle: .alert)
+                let cancelAction = UIAlertAction(title: "Ok", style: .cancel)
+                alert.addAction(cancelAction)
+                self.present(alert, animated: true, completion: nil)            }
             catch
             {
                 let alert = UIAlertController(title: "Error", message: "Registration error has occured", preferredStyle: .alert)
