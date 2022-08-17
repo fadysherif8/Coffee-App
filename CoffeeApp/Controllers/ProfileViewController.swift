@@ -42,6 +42,8 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var logOutOutlet: UIButton!
     
     @IBAction func logOutButton(_ sender: Any) {
+        let cartCsreen = CartViewController()
+        cartCsreen.clearTable()
         self.performSegue(withIdentifier: "toLogInScreen", sender: self)
         
     }
