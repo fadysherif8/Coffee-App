@@ -83,7 +83,9 @@
                     </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="emailField" destination="oec-V9-LsQ" id="G6g-eq-4An"/>
                         <outlet property="logOutOutlet" destination="ETj-jO-OfD" id="ycL-FX-hNr"/>
+                        <outlet property="nameField" destination="SEq-c2-S8b" id="yYF-SN-UId"/>
                         <outlet property="profileView" destination="ZXI-Wf-D36" id="yPj-d0-TfS"/>
                         <outlet property="welcomeOutlet" destination="xvw-fc-FrD" id="O3P-Xi-vXy"/>
                         <segue destination="QgJ-8X-gy6" kind="presentation" identifier="toLogInScreen" modalPresentationStyle="fullScreen" id="x10-wg-rZa"/>
