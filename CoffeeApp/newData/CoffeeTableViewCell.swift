@@ -36,6 +36,4 @@ class CoffeeTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-//    self.performSegue(withIdentifier: "toProductItem", sender: self)
-
 }

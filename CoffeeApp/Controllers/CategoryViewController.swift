@@ -36,17 +36,19 @@ class CategoryViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     //var allProducts : [Coffee]
-  //  var coffees = ["Espresso","Cappuccino","Macciato","Mocha","Latte"]
+    //var coffees = ["Espresso","Cappuccino","Macciato","Mocha","Latte"]
     
     override func viewDidLoad() {
         loadingData()
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return prods.count
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
