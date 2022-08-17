@@ -56,6 +56,10 @@ class ProductItemViewController: UIViewController {
                                                                                                                     .text!)!, sugar: sugarAmount, size: cupSize, count: Int(itemCount.text!)!))
         print("cupSize: \(cupSize)...sugarAmount:\(sugarAmount)")
         print("Cart List count: \(CartViewController.cartList.count)")
+        let alert = UIAlertController(title: "Success", message: "You have added an Item to your cart", preferredStyle: .alert)
+        let cancelAction = UIAlertAction(title: "Ok", style: .cancel)
+        alert.addAction(cancelAction)
+        self.present(alert, animated: true, completion: nil)
     }
     
     
@@ -143,7 +147,6 @@ class ProductItemViewController: UIViewController {
 //        plusOutlet.clipsToBounds=true
 //        plusOutlet.layer.cornerRadius = plusOutlet.frame.height/2
 //        plusOutlet.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMaxXMinYCorner]
-//
 //        minusOutlet.clipsToBounds=true
 //        minusOutlet.layer.cornerRadius = minusOutlet.frame.height/2
 //        minusOutlet.layer.maskedCorners = [.layerMinXMinYCorner, .layerMinXMaxYCorner]

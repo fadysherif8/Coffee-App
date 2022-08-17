@@ -36,7 +36,6 @@ class CategoryViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     //var allProducts : [Coffee]
-    
   //  var coffees = ["Espresso","Cappuccino","Macciato","Mocha","Latte"]
     
     override func viewDidLoad() {
