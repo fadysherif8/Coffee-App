@@ -144,13 +144,6 @@ class ProductItemViewController: UIViewController {
         addCartOutlet.clipsToBounds=true
         addCartOutlet.layer.cornerRadius=addCartOutlet.frame.height/2
         
-//        plusOutlet.clipsToBounds=true
-//        plusOutlet.layer.cornerRadius = plusOutlet.frame.height/2
-//        plusOutlet.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMaxXMinYCorner]
-//        minusOutlet.clipsToBounds=true
-//        minusOutlet.layer.cornerRadius = minusOutlet.frame.height/2
-//        minusOutlet.layer.maskedCorners = [.layerMinXMinYCorner, .layerMinXMaxYCorner]
-        
     }
 
     /*
