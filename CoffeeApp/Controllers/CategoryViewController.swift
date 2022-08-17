@@ -10,8 +10,8 @@ import CoreData
 
 class CategoryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    static var currentDrinkName = "Default"
-    static var currentDrinkImage: UIImage?
+     var currentDrinkName = "Default"
+     var currentDrinkImage: UIImage?
     
     //var coffees = [Coffee(title: "Espresso", image: UIImage(named: "espresso2")!), Coffee(title: "Cappuccino", image: UIImage(named: "cappuccino")!), Coffee(title: "Macciato", image: UIImage(named: "latte-macchiato")!), Coffee(title: "Mocha", image: UIImage(named: "mocha (1)")!), Coffee(title: "Latte", image: UIImage(named: "latte")!)]
     
@@ -49,10 +49,12 @@ class CategoryViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let item=prods[indexPath.row]
-//        let storyboard=UIStoryboard(name: "ProductItemStoryboard", bundle: nil)
-//        let vc=storyboard.instantiateViewController(withIdentifier: "productItemScreen") as! ProductItemViewController
-//        self.present(vc, animated: true, completion: nil)
+        let item=prods[indexPath.row]
+        let storyboard=UIStoryboard(name: "ProductItemStoryboard", bundle: nil)
+        let vc=storyboard.instantiateViewController(withIdentifier: "productItemScreen") as! ProductItemViewController
+        vc.image=item.image
+        vc.Title=item.title
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -61,7 +63,7 @@ class CategoryViewController: UIViewController, UITableViewDelegate, UITableView
         cell.drinkName.text = prods[indexPath.row].title
         cell.drinkImage.image = prods[indexPath.row].image
         
-        cell.delegate = self
+        //cell.delegate = self
         
         return cell
     }
@@ -72,10 +74,10 @@ class CategoryViewController: UIViewController, UITableViewDelegate, UITableView
     
 }
 
-extension CategoryViewController: CoffeeTableViewCellDelegate {
-    func didTapButton(drinkName: String, drinkImage: UIImage) {
-        CategoryViewController.currentDrinkName = drinkName
-        CategoryViewController.currentDrinkImage = drinkImage
-        
-    }
-}
+//extension CategoryViewController: CoffeeTableViewCellDelegate {
+//    func didTapButton(drinkName: String, drinkImage: UIImage) {
+//        CategoryViewController.currentDrinkName = drinkName
+//        CategoryViewController.currentDrinkImage = drinkImage
+//
+//    }
+//}

@@ -123,29 +123,6 @@ class LogInViewController: UIViewController {
     
     func signIn()
     {
-        /*let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-        do
-        {
-            let users = try context.fetch(User.fetchRequest())
-            for user in users
-            {
-                if((user as AnyObject).password == logPassField.text && (user as AnyObject).email == logEmailField.text)
-                {
-                    //UnComment Next Line when you finish core data
-                    loadProducts()
-                    self.performSegue(withIdentifier: "toCategoryScreen", sender: self)
-                }
-                else
-                {
-                    let alert = UIAlertController(title: "Error", message: "Login Error", preferredStyle: .alert)
-                    self.present(alert, animated: true, completion: nil)
-                }
-            }
-        } catch
-        {
-            let alert = UIAlertController(title: "Error", message: "An error has occured", preferredStyle: .alert)
-            self.present(alert, animated: true, completion: nil)
-        }*/
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         var allUsers = [User]()
             do {
@@ -167,9 +144,8 @@ class LogInViewController: UIViewController {
         
         //function to take you to category screen after validating the user
         //Uncomment next line and then delete self.perfrom segue
-        
         signIn()
-        //self.performSegue(withIdentifier: "toCategoryScreen", sender: self)
+
     }
     /*
     // MARK: - Navigation

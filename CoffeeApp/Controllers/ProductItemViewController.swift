@@ -11,6 +11,9 @@ class ProductItemViewController: UIViewController {
     
     var itemCounter = 1
     
+    var Title:String?
+    var image:UIImage?
+    
     // Adding outlets for the data that needs to be displayed on the cart scene
     @IBOutlet weak var drinkImage: UIImageView!
     @IBOutlet weak var drinkPrice: UILabel!
@@ -128,8 +131,8 @@ class ProductItemViewController: UIViewController {
     
     // Function to display corresponding drink data
     func displayData() {
-        drinkName.text = CategoryViewController.currentDrinkName
-        drinkImage.image = CategoryViewController.currentDrinkImage
+        drinkName.text = Title
+        drinkImage.image = image
         
     }
     

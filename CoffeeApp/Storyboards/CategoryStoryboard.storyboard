@@ -47,10 +47,6 @@
                                                     </constraints>
                                                     <color key="tintColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <state key="normal" image="chevron.right" catalog="system"/>
-                                                    <connections>
-                                                        <action selector="onClickDetailsButton:" destination="xtS-iN-DeB" eventType="touchUpInside" id="DYe-P3-fPc"/>
-                                                        <segue destination="rDR-rX-LIe" kind="show" id="yhS-fX-8Ak"/>
-                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
