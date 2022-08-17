@@ -49,6 +49,7 @@
                                                     <state key="normal" image="chevron.right" catalog="system"/>
                                                     <connections>
                                                         <action selector="onClickDetailsButton:" destination="xtS-iN-DeB" eventType="touchUpInside" id="DYe-P3-fPc"/>
+                                                        <segue destination="rDR-rX-LIe" kind="show" id="yhS-fX-8Ak"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -110,12 +111,12 @@
         <!--ProductItemStoryboard-->
         <scene sceneID="zGj-aa-SX6">
             <objects>
-                <viewControllerPlaceholder storyboardName="ProductItemStoryboard" id="rDR-rX-LIe" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="toProductDetails" storyboardName="ProductItemStoryboard" id="rDR-rX-LIe" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="DTC-yG-ift"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wcI-1c-f0C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1849" y="-559"/>
+            <point key="canvasLocation" x="1894" y="-619"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="d0o-L9-WkC">

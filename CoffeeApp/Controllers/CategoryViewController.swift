@@ -47,8 +47,12 @@ class CategoryViewController: UIViewController, UITableViewDelegate, UITableView
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return prods.count
     }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
+//        let item=prods[indexPath.row]
+//        let storyboard=UIStoryboard(name: "ProductItemStoryboard", bundle: nil)
+//        let vc=storyboard.instantiateViewController(withIdentifier: "productItemScreen") as! ProductItemViewController
+//        self.present(vc, animated: true, completion: nil)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -65,12 +69,6 @@ class CategoryViewController: UIViewController, UITableViewDelegate, UITableView
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100.0
     }
-       
-
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        print("section:\(indexPath.section)")
-//        print("row: \(indexPath.row)")
-//    }
     
 }
 
