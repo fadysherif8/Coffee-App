@@ -43,6 +43,16 @@ class ProfileViewController: UIViewController {
     
     @IBAction func logOutButton(_ sender: Any) {
         CartViewController.clearTable()
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        var allProds = [Product]()
+            do {
+                allProds = try context.fetch(Product.fetchRequest())
+                for prods in allProds{
+                    context.delete(prods)
+                }
+            } catch {
+                print("an error has occured while logging in")
+            }
         self.performSegue(withIdentifier: "toLogInScreen", sender: self)
         
     }

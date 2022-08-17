@@ -155,10 +155,6 @@ class LogInViewController: UIViewController {
                         loadProducts()
                         self.performSegue(withIdentifier: "toCategoryScreen", sender: self)
                     }
-                    else
-                    {
-                        print("User Not found")
-                    }
                 }
             } catch {
                 print("an error has occured while logging in")
