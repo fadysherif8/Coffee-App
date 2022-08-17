@@ -190,6 +190,7 @@
                     </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="myTable" destination="Uo6-zs-FEP" id="OWL-Wp-9XT"/>
                         <outlet property="subTotal" destination="JF3-rf-efw" id="ISV-8R-hGW"/>
                     </connections>
                 </viewController>

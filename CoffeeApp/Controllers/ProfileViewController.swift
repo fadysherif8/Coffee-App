@@ -13,7 +13,6 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var emailField: UILabel!
     @IBOutlet weak var nameField: UILabel!
     
-    var name:String?
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,7 +26,6 @@ class ProfileViewController: UIViewController {
         
         let userName="Testing"
         welcomeOutlet.text!="Hi \(userName) !"
-        
         //self.emailField.text=
         //self.nameField.text=
     }
