@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 class ProfileViewController: UIViewController {
 
@@ -23,11 +24,18 @@ class ProfileViewController: UIViewController {
         //styling logout button
         logOutOutlet.clipsToBounds=true
         logOutOutlet.layer.cornerRadius=logOutOutlet.frame.height/2
-        
-        let userName="Testing"
-        welcomeOutlet.text!="Hi \(userName) !"
-        //self.emailField.text=
-        //self.nameField.text=
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        var allUsers = [User]()
+        do{
+            allUsers = try context.fetch(User.fetchRequest())
+            if allUsers.count>0{
+                self.emailField.text=allUsers[allUsers.count-1].email
+                self.nameField.text=allUsers[allUsers.count-1].username
+                welcomeOutlet.text!="Hi \(allUsers[allUsers.count-1].username) !"
+            }
+        }catch{}
     }
     //Field to print user first name
     @IBOutlet weak var welcomeOutlet: UILabel!
@@ -35,6 +43,7 @@ class ProfileViewController: UIViewController {
     
     @IBAction func logOutButton(_ sender: Any) {
         self.performSegue(withIdentifier: "toLogInScreen", sender: self)
+        
     }
     /*
     // MARK: - Navigation
