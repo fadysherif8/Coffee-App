@@ -68,7 +68,6 @@ class RegisterViewController: UIViewController {
     
     @IBAction func signUpButton(_ sender: Any) {
         signUp()
-        //print("You pressed sign up")
     }
     /*
     // MARK: - Navigation
