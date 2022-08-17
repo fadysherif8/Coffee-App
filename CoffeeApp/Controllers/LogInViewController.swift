@@ -9,6 +9,7 @@ import UIKit
 import CoreData
 
 class LogInViewController: UIViewController {
+    static var userEmail:String?
     
     //This is just for styling purposes
     @IBOutlet weak var logInOutlet: UIButton!
@@ -153,6 +154,7 @@ class LogInViewController: UIViewController {
                     if(all.password == logPassField.text && all.email == logEmailField.text)
                     {
                         loadProducts()
+                        LogInViewController.userEmail=logEmailField.text
                         self.performSegue(withIdentifier: "toCategoryScreen", sender: self)
                     }
                 }
@@ -165,9 +167,6 @@ class LogInViewController: UIViewController {
         
         //function to take you to category screen after validating the user
         //Uncomment next line and then delete self.perfrom segue
-        
-        var vc=ProfileViewController()
-        print("\(self.logEmailField.text!)")
         
         signIn()
         //self.performSegue(withIdentifier: "toCategoryScreen", sender: self)

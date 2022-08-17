@@ -11,6 +11,7 @@ import CoreData
 class ProfileViewController: UIViewController {
 
     @IBOutlet weak var profileView: UIImageView!
+    
     @IBOutlet weak var emailField: UILabel!
     @IBOutlet weak var nameField: UILabel!
     
@@ -30,10 +31,12 @@ class ProfileViewController: UIViewController {
         var allUsers = [User]()
         do{
             allUsers = try context.fetch(User.fetchRequest())
-            if allUsers.count>0{
-                self.emailField.text=allUsers[allUsers.count-1].email
-                self.nameField.text=allUsers[allUsers.count-1].username
-                welcomeOutlet.text!="Hi \(allUsers[allUsers.count-1].username) !"
+            for user in allUsers {
+                if user.email==LogInViewController.userEmail{
+                    self.emailField.text=user.email
+                    self.nameField.text=user.username
+                    welcomeOutlet.text="Hi \(user.username!)"
+                }
             }
         }catch{}
     }
@@ -51,7 +54,7 @@ class ProfileViewController: UIViewController {
                     context.delete(prods)
                 }
             } catch {
-                print("an error has occured while logging in")
+                print("an error has occured while logging out")
             }
         self.performSegue(withIdentifier: "toLogInScreen", sender: self)
         

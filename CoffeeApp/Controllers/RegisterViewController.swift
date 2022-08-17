@@ -46,6 +46,7 @@ class RegisterViewController: UIViewController {
         }
         else
         {
+            newUser.username=nameField.text
             newUser.email = emailField.text
             newUser.password = passwordField.text
             do
@@ -67,7 +68,7 @@ class RegisterViewController: UIViewController {
     
     @IBAction func signUpButton(_ sender: Any) {
         signUp()
-        print("You pressed sign up")
+        //print("You pressed sign up")
     }
     /*
     // MARK: - Navigation
