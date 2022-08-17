@@ -22,10 +22,9 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
         // Do any additional setup after loading the view.
     }
     
-    func clearTable()
+    static func clearTable()
     {
-        myTable.dataSource = [] as! UITableViewDataSource
-        myTable.reloadData()
+        cartList = []
     }
     
     override func viewDidAppear(_ animated: Bool) {
