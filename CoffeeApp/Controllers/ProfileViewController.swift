@@ -35,7 +35,7 @@ class ProfileViewController: UIViewController {
                 if user.email==LogInViewController.userEmail{
                     self.emailField.text=user.email
                     self.nameField.text=user.username
-                    //welcomeOutlet.text="Hi \(user.username!)"
+                    welcomeOutlet.text="Hi \(user.username!)"
                 }
             }
         }catch{}
