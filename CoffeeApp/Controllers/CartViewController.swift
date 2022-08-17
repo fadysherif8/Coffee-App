@@ -10,6 +10,7 @@ import UIKit
 class CartViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
   
     @IBOutlet weak var myTable: UITableView!
+    
     var subTotalVar = 0
     @IBOutlet weak var subTotal: UILabel!
     static var cartList: [CartItem] = []
