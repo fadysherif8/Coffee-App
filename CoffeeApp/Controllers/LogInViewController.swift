@@ -29,6 +29,7 @@ class LogInViewController: UIViewController {
     }
     @objc func handleTap()
     {
+        //This function to let user dismiss the soft keyboard
         logEmailField.resignFirstResponder()
         logPassField.resignFirstResponder()
     }

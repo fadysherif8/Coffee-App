@@ -24,8 +24,11 @@ class RegisterViewController: UIViewController {
     
     @objc func handleTap()
     {
-        passwordField.resignFirstResponder()
+        //This function to let user dismiss the soft keyboard
         emailField.resignFirstResponder()
+        nameField.resignFirstResponder()
+        passwordField.resignFirstResponder()
+        repPasswordField.resignFirstResponder()
     }    //These are the otlets used to get user data
     @IBOutlet weak var emailField: UITextField!
     
