@@ -21,6 +21,25 @@ class RegisterViewController: UIViewController {
         signUpOutlet.clipsToBounds=true
         signUpOutlet.layer.cornerRadius=signUpOutlet.frame.height/2
     }
+    var iconClick = true
+    @IBAction func registerRevealPass(_ sender: Any) {
+        if(iconClick == true){
+            passwordField.isSecureTextEntry=false
+        }else{
+            passwordField.isSecureTextEntry = true
+        }
+        iconClick = !iconClick
+    }
+    
+    @IBAction func registerRevealRepeat(_ sender: Any) {
+        if(iconClick == true){
+            repPasswordField.isSecureTextEntry=false
+        }else{
+            repPasswordField.isSecureTextEntry = true
+        }
+        iconClick = !iconClick
+    }
+    
     
     @objc func handleTap()
     {

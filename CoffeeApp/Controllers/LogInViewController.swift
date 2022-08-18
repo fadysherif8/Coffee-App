@@ -14,6 +14,15 @@ class LogInViewController: UIViewController {
     //This is just for styling purposes
     @IBOutlet weak var logInOutlet: UIButton!
     //this button takes you to the create signUp Screen
+    var iconClick = true
+    @IBAction func revealPassword(_ sender: Any) {
+        if(iconClick == true){
+            logPassField.isSecureTextEntry=false
+        }else{
+            logPassField.isSecureTextEntry = true
+        }
+        iconClick = !iconClick
+    }
     @IBAction func registerButton(_ sender: Any) {
         performSegue(withIdentifier: "toSignUp", sender: self)
 
@@ -134,6 +143,12 @@ class LogInViewController: UIViewController {
                         loadProducts()
                         LogInViewController.userEmail=logEmailField.text
                         self.performSegue(withIdentifier: "toCategoryScreen", sender: self)
+                    }else{
+                        //If the user is not found you trigger an alert
+                        let alert = UIAlertController(title: "Error", message: "User not found", preferredStyle: .alert)
+                        let cancelAction = UIAlertAction(title: "Ok", style: .cancel)
+                        alert.addAction(cancelAction)
+                        self.present(alert, animated: true, completion: nil)
                     }
                 }
             } catch {
