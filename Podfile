@@ -6,5 +6,6 @@ target 'CoffeeApp' do
   use_frameworks!
 
   # Pods for CoffeeApp
-
+pod 'Kingfisher', '~> 7.0'
+pod 'Alamofire'
 end
